@@ -1,0 +1,798 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="/dist/output.css" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8.4.5/swiper-bundle.min.css" rel="stylesheet">
+  
+</head>
+<body class=" ">
+  <header class="border-b border-[#D0D0A7]">
+   <nav class="w-full">
+    <div class="container-1 container flex   items-center justify-between py-[30px]  flex-wrap px-4 lg:px-0 md:flex-nowrap" >
+      <a href="" class="no-underline mx-auto"><img src="assets/images/logo.png" alt=""></a>
+
+      <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="menu-button"
+      class="h-6 w-6 cursor-pointer md:hidden block"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"
+      />
+    </svg>
+
+      
+   
+   <div class="hidden w-full md:flex md:items-center md:w-auto  " id="menu">
+      <ul
+        class="
+          pt-4
+          text-base text-gray-700
+          md:flex
+          md:justify-between 
+          md:items-center
+          md:pt-0 uppercase space-y-2 lg:space-y-0"
+      >
+        <li class="pr-[30px]">
+          <a class="md:py-4 py-2  hover:[color:#0B8497;] text-sm color-1 tracking-widest" href="#"
+            >Home</a
+          >
+        </li>
+        <li class="dropdown lg:px-[30px]">
+          <a class="md:py-4 py-2  hover:[color:#0B8497;] text-sm text-black tracking-widest " href="#"
+            >Blog<svg class="inline ps-2 h-3" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></a
+          >
+          <ul class="dropdown-menu  p-6 border border-[#D0D0A7] absolute hidden  bg-white">
+            <li class=" border-b border-[#D0D0A7] pb-4 "><a href="" class="text-sm text-black  ">1st Full Post + 2 cols Grid</a></li>
+            <li class=" border-b border-[#D0D0A7] py-4 "><a href="">1st Full Post + list</a></li>
+            <li class=" border-b border-[#D0D0A7] py-4 "><a href="">2 cols Grid Layout</a></li>
+            <li class=" border-b border-[#D0D0A7] py-4 "><a href="">List Layout</a></li>
+            <li class=" border-b border-[#D0D0A7] py-4 "><a href="">3 cols Grid Layout</a></li>
+            <li class="pt-4"><a href="">Standard Blog Layout</a></li>
+          </ul>
+        </li>
+        <li class="dropdown  lg:px-[30px]">
+          <a class="md:py-4 py-2  hover:[color:#0B8497;] text-sm text-black tracking-widest" href="#"
+            >Features<svg class="inline ps-1 h-3" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></a
+          >
+          <ul class="dropdown-menu  p-6 border border-[#D0D0A7] absolute hidden  bg-white w-60">
+            <li class=" border-b border-[#D0D0A7] pb-4 has-submenu relative">
+                <a href="" class="text-sm text-black  ">Headers 
+                        <svg class="inline  pl-5 " xmlns="http://www.w3.org/2000/svg" height="0.75em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></a>
+                <ul class="submenu hidden absolute bg-white p-6 border border-[#D0D0A7] w-40">
+                    <li class="border-b border-[#D0D0A7] py-4">Header 1</li>
+                    <li class="border-b border-[#D0D0A7] py-4">Header 2</li>
+                </ul>
+            
+            </li>
+          
+            <li class=" border-b border-[#D0D0A7] pb-4 has-submenu relative">
+                <a href="" class="text-sm text-black  ">Sliders 
+                        <svg class="inline  pl-5 " xmlns="http://www.w3.org/2000/svg" height="0.75em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></a>
+                <ul class="submenu hidden absolute bg-white p-6 border border-[#D0D0A7] w-40">
+                    <li class="border-b border-[#D0D0A7] py-4">Slider 1</li>
+                    <li class="border-b border-[#D0D0A7] py-4">Slider 2</li>
+                </ul>
+            
+            </li>
+            <li class=" border-b border-[#D0D0A7] pb-4 has-submenu relative">
+                <a href="" class="text-sm text-black  ">Sidebars 
+                        <svg class="inline  pl-5 " xmlns="http://www.w3.org/2000/svg" height="0.75em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></a>
+                <ul class="submenu hidden absolute bg-white p-6 border border-[#D0D0A7] w-40">
+                    <li class="border-b border-[#D0D0A7] py-4">Sidebar 1</li>
+                    <li class="border-b border-[#D0D0A7] py-4">Sidebar 2</li>
+                </ul>
+            
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown lg:px-[30px]">
+          <a class="md:py-4 py-2  hover:[color:#0B8497;] text-sm text-black tracking-widest" href="#">Catgories<svg class="inline ps-1 h-3" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></a>
+          <ul class="dropdown-menu  p-6 border border-[#D0D0A7] absolute hidden  bg-white">
+            <li class=" border-b border-[#D0D0A7] pb-4 "><a href="" class="text-sm text-black  ">Lifestyle</a></li>
+            <li class=" border-b border-[#D0D0A7] py-4 "><a href="">Travel</a></li> 
+            <li class="pt-4"><a href="">Photo</a></li>
+          </ul>
+        </li>
+        <li class="lg:px-[30px]">
+            <a class="md:py-4 py-2  hover:[color:#0B8497;] text-sm text-black tracking-widest" href="#"
+              >About</a
+            >
+          </li>
+          <li class="lg:px-[30px]">
+            <a class="md:py-4 py-2  hover:[color:#0B8497;] text-sm text-black tracking-widest" href="#"
+              >Contact</a
+            >
+          </li>
+          <li class="dropdown lg:px-8">
+            <a class="md:py-4 py-2  hover:[color:#0B8497;] text-sm text-black tracking-widest" href="#"
+              >Shop<svg class="inline ps-1 h-3" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></a
+            >
+            <ul class="dropdown-menu  p-6 border border-[#D0D0A7] absolute hidden  bg-white">
+                <li class=" border-b border-[#D0D0A7] pb-4 "><a href="" class="text-sm text-black  ">Cart</a></li>
+                <li class=" border-b border-[#D0D0A7] py-4 "><a href="">Checkout</a></li> 
+                <li class="pt-4"><a href="">My Account</a></li>
+              </ul>
+          </li>
+        <li class="lg:px-[30px]">
+          <a
+            class="md:py-4 py-2   hover:[color:#0B8497;] text-sm text-black tracking-widest"
+            href="#"
+            >Portfolio  </a
+          >
+        </li>
+        <li class=""><a
+            class="  md:pe-0 py-2  hover:[color:#0B8497;] text-sm text-black tracking-widest"
+            href="#"
+            ><img src="assets/images/lightbutton.png" alt="">  </a
+          >
+          <a
+            class="  md:pe-0 py-2  hover:[color:#0B8497;] text-sm text-black tracking-widest hidden"
+            href="#"
+            ><img src="assets/images/darkbutton.png" alt="">  </a >  
+        </li>
+      </ul>
+    </div>
+
+    </div>
+   </nav>
+  
+      
+        
+  </header>
+  <main class=" ">
+    <section class="bg-color-5">
+        <div class="container-1 container sm:pt-[60px] lg:pt-[120px] lg:pb-[60px] py-[30px] px-3 lg:px-0 space-y-3 lg:space-y-0 ">
+            <div class="hidden sm:flex  md:flex lg:flex    relative flex-wrap space-y-2  md:space-y-0  ">
+                <div class="sm:w-1/3 lg:w-1/3 flex justify-start sm:px-2"> <img src="assets/images/banner1.png" class="" alt=""> </div>
+                <div class="sm:w-1/3 lg:w-1/3 flex justify-center relative sm:px-2">
+                   <div class="absolute sm:top-[-10%] lg:top-[-10%]">
+                    <img src="assets/images/tape1.png" class="absolute lg:w-[77px] lg:h-[77px] lg:left-[-30px] lg:top-[-30px] sm:w-9 sm:h-9 sm:top-[-15px] sm:left-[-15px]" alt=""> 
+                    <img src="assets/images/banner2.png" class="" alt="">
+                    <img src="assets/images/tape1.png" class="absolute lg:w-[77px] lg:h-[77px]  lg:right-[-30px]  lg:bottom-[-30px] sm:h-9 sm:w-9 sm:right-[-15px] sm:bottom-[-15px]"  alt=""> 
+                  </div> 
+                </div>
+                <div class="sm:w-1/3 lg:w-1/3 flex justify-end sm:px-2"> <img src="assets/images/banner3.png" class="" alt=""> </div>
+            </div>
+           <div class="flex justify-center align-items-center   lg:hidden md:hidden sm:hidden">
+            <div class="swiper-res1 overflow-hidden">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="assets/images/banner1.png" alt="" class="w-full"></div>
+                <div class="swiper-slide"><img src="assets/images/banner2.png" alt="" class="w-full"></div>
+                <div class="swiper-slide"><img src="assets/images/banner3.png" alt="" class="w-full"></div>
+                
+              </div>
+      
+            
+            </div>
+           </div>
+            <div class="flex color-12 relative ">
+                <div class="text-center">
+                    <h6 class="italic font-medium ltr-spc-3">HEY THERE</h6>
+                    <h1 class="font-semibold pb-[30px] sm:pb-[15px]">I&CloseCurlyQuote;m Haus</h1>
+                    <p class="lg:leading-10 lg:text-xl font-normal pb-[30px] sm:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero ex, tristique sed dignissim vel, cursus ut magna. Aenean lacinia mi eget orci aliquet pharetra. Duis ut ultricies felis. Nulla vitae mi dictum, scelerisque nibh eget, sagittis ligula.Nulla tortor quam, feugiat id laoreet ac, pellentesque sed tellus. Nunc condimentum, magna vel sodales mollis, nisl nibh ornare eros, vel malesuada nunc metus at elit. Aenean vitae arcu auctor, imperdiet nisl quis, interdum lacus.</p>
+                    <a href="" class="border border-[#D0D0A7] text-sm md:text-[22px] px-5 py-[10px] italic font-medium hover:bg-[#D0D0A7] hover:text-white tracking-[0.7px] md:tracking-[3.3px]" >READ THE WHOLE STORY</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="bg-color-6 relative border-middle">
+       <div class="container-1 container py-[30px] lg:py-[60px] sm:py-[60px] md:py-[60px]">
+        <div class="flex flex-row justify-between flex-wrap lg:flex-nowrap items-center px-3 lg:px-0">
+            <div class="w-full sm:w-[30%] md:w-[25%]     lg:px-0">
+                <div class="relative flex justify-center">
+                    <img src="assets/images/tape1.png" class="absolute lg:w-[77px] lg:h-[77px] lg:left-[-30px] lg:top-[-30px] sm:w-9 sm:h-9 sm:top-[-15px] sm:left-[-15px]" alt=""> 
+                    <img src="assets/images/banner4.png" class="w-full" alt="">
+                    <img src="assets/images/tape1.png" class="absolute lg:w-[77px] lg:h-[77px]  lg:right-[-30px]  lg:bottom-[-30px] sm:h-9 sm:w-9 sm:right-[-15px] sm:bottom-[-15px]" alt=""> 
+                </div>
+
+            </div>  
+            <div class="lg:p-16 p-4 w-full sm:w-[70%]  sm:pr-0 sm:pl-8  ">
+                    <h4 class="tracking-[4px] bar-after ">Condimentum Magna Vel Sodales Mollis Nisl Nibh Ornare Eros</h4>
+                    <p class="sm:text-lg  text-2xl color-9 font-normal py-[30px]   leading-[48px]">Nunc condimentum, magna vel sodales mollis, nisl nibh ornare eros, vel malesuada nunc metus. Aenean vitae arcu auctor, imperdiet nisl quis interdum lacus.</p>
+                    <a href="" class="border border-[#D0D0A7] text-sm md:text-[22px] px-5 py-[10px] italic font-medium hover:bg-[#D0D0A7] hover:text-white tracking-[0.7px]  lg:tracking-[3.3px]">GET STARTED</a>
+            </div>
+
+        </div>
+       </div>
+    </section>
+    <section>
+        <div class="container-1 container py-[30px] lg:py-[60px] sm:py-[60px] md:py-[60px]">
+            <div class="hidden sm:flex  sm:w-full sm:flex-wrap ">
+                <div class="   w-1/3    flex flex-col content-between space-y-5 lg:space-y-[120px]  px-3 lg:px-0 pb-4 lg:pb-0">
+                    <div class="relative flex items-center justify-center ">
+                        <img src="assets/images/work1.png" alt="" class="w-full">
+                        <p class="absolute bg-white block hover:w-full uppercase text-center lg:text-[22px] font-medium tracking-normal lg:tracking-[3.3px]  py-4 px-1 sm:text-base">ARCHITECTURE</p>
+                    </div>
+                    <div class="relative flex items-center justify-center">
+                        <img src="assets/images/work2.png" alt="" class="w-full">
+                        <p class="absolute bg-white block hover:w-full uppercase text-center lg:text-[22px] font-medium tracking-normal lg:tracking-[3.3px] py-4 px-1 sm:text-base">PHOTOGRAPHY</p>
+                    </div>
+                </div>
+                <div class=" w-1/3   flex flex-col justify-center content-center items-center lg:px-32   pb-4 lg:pb-0">
+                    <p class="italic text-[22px] font-medium ">THE PORTFOLIO</p>
+                    <h2 class="font-semibold text-center pb-10">VIEW RECENT WORK</h2>
+                    <a href="" class="border border-[#04282D] text-[22px] px-5 py-[10px] italic font-medium hover:bg-[#04282D] hover:text-white tracking-normal lg:tracking-[3.3px] sm:hidden  lg:block">EXPLORE</a>
+
+                </div>
+                <div class=" w-1/3   flex flex-col content-between space-y-5 lg:space-y-[120px]   px-3 lg:px-0">
+                    <div class="relative flex items-center justify-center ">
+                        <img src="assets/images/work3.png" alt="" class="w-full">
+                        <p class="absolute bg-white block hover:w-full uppercase text-center lg:text-[22px] font-medium tracking-normal lg:tracking-[3.3px] py-4 px-1 sm:text-base">INTERIOR</p>
+                    </div>
+                    <div class="relative flex items-center justify-center">
+                        <img src="assets/images/work4.png" alt="" class="w-full">
+                        <p class="absolute bg-white block hover:w-full uppercase text-center lg:text-[22px] font-medium tracking-normal lg:tracking-[3.3px] py-4 px-1 sm:text-base">ANIMAL</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="w-full sm:hidden md:hidden ">
+                      
+                    <div class="w-full  lg:w-1/3 sm:w-full flex flex-col justify-center content-center items-center lg:px-32 md:order-2 order-1 pb-4 lg:pb-0">
+                    <p class="italic text-[22px] font-medium ">THE PORTFOLIO</p>
+                    <h2 class="font-semibold text-center pb-10">VIEW RECENT WORK</h2>             
+                    </div>
+                
+                   
+                    <div class="swiper-res2  overflow-hidden flex flex-col  justify-center" >
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper  ">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img src="assets/images/work1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/images/work2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/images/work3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/images/work4.png" alt="">
+                        </div>
+                      
+                      </div>
+                      
+                    
+                      <!-- If we need navigation buttons -->
+                      <div class="swiper-button-prev-w after:hidden left-0 absolute z-10  " ><img src="assets/images/leftarrow.png" alt="" class="  "></div>
+                      <div class="swiper-button-next-w after:hidden right-0 absolute z-10"><img src="assets/images/rightarrow.png" alt="" class=""></div>
+                   
+                       
+                    </div>
+                    
+                  
+                    
+            </div>
+        </div>
+    </section>
+    <section class="bg-color-5 border-middle-2 relative">
+        <div class="container-1 container py-[30px] lg:py-[60px] sm:py-[60px] md:py-[60px]">
+            <div class="flex w-full flex-wrap ">
+                <div class=" sm:w-2/5 md:w-2/5 lg:w-2/4  flex flex-col justify-center  pb-8 lg:pb-0">
+                    <div class="lg:w-9/12 ">
+                        
+                    <h4 class="bar-after font-normal   ">Tools For Creatives</h4>
+                    <p class="hidden lg:block text-[20px] color-9 font-normal py-[30px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <p class="sm:block lg:hidden text-[20px] color-9 font-normal py-[30px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="" class="border border-[#D0D0A7] text-sm text-[22px] px-5 py-[10px] italic font-medium hover:bg-[#D0D0A7] hover:text-white tracking-[0.7px] lg:tracking-[3px]  text-[#04282D]">GO TO THE BLOG</a>
+                    </div>
+                </div>
+                <div class="sm:w-3/5 md:w-3/5 lg:w-2/4">
+                    <div class="relative flex flex-wrap justify-between   ">
+                        <img src="assets/images/tape1.png" class="absolute lg:w-[77px] lg:h-[77px] lg:left-[-30px] lg:top-[-30px] sm:w-9 sm:h-9 sm:top-[-15px] sm:left-[-15px] h-9 w-9 left-[-15px] top-[-15px]" alt=""> 
+                        <img src="assets/images/tools1.png" class="w-2/4  sm:px-2" alt="">
+                        <img src="assets/images/tools2.png" class="w-2/4 sm:px-2" alt="">
+                        <img src="assets/images/tape1.png" class="absolute lg:w-[77px] lg:h-[77px]  lg:right-[-30px]  lg:bottom-[-30px] sm:h-9 sm:w-9 sm:right-[-15px] sm:bottom-[-15px]  h-9 w-9 right-[-15px] bottom-[-15px]" alt=""> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hidden lg:block">
+      <div class="container-1 container py-[30px] lg:py-[60px] sm:py-[60px] md:py-[60px] ">
+          <div class="flex w-full lg:space-x-8 flex-wrap md:flex-nowrap space-y-28 md:space-y-0 px-3 lg:px-0">
+                <div class="w-full lg:w-1/3 relative flex justify-center  ">
+                  <div class="testimonial border border-[#D0D0A7]  p-[30px] pb-0 relative hover:bg-[#E7F2ED] flex justify-center">
+                      <p class="color-12 text-[20px] italic leading-10 pb-[90px] text-center">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor interdum ipsum, non finibus libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                      <div class="absolute  review-img bottom-[-25%] ">
+                        <img class="p-[10px] border border-[#D0D0A7] rounded-full mx-auto bg-white" src="assets/images/testimonial1.png" alt="">
+                        <p class="color-12">CLIENT NAME HERE</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="w-full lg:w-1/3 relative flex justify-center">
+                  <div class="testimonial border border-[#D0D0A7]  p-[30px] pb-0 relative hover:bg-[#E7F2ED] flex justify-center">
+                      <p class="color-12 text-[20px] italic leading-10 pb-[90px] text-center">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor interdum ipsum, non finibus libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                      <div class="absolute  review-img bottom-[-25%]">
+                        <img class="p-[10px] border border-[#D0D0A7] rounded-full mx-auto bg-white" src="assets/images/testimonial2.png" alt="">
+                        <p class="color-12">CLIENT NAME HERE</p>
+                    </div>
+                  </div>
+                 
+                </div>
+                <div class="w-full lg:w-1/3 relative flex justify-center">
+                  <div class="testimonial border border-[#D0D0A7]  p-[30px] pb-0 relative hover:bg-[#E7F2ED] flex justify-center">
+                      <p class="color-12 text-[20px] italic leading-10 pb-[90px] text-center">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor interdum ipsum, non finibus libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                      <div class="absolute  review-img bottom-[-25%] ">
+                        <img class="p-[10px] border border-[#D0D0A7] rounded-full mx-auto bg-white" src="assets/images/testimonial3.png" alt="">
+                        <p class="color-12">CLIENT NAME HERE</p>
+                    </div>
+                  </div>
+                  
+                </div>
+          </div>
+      </div>
+    </section>
+    <section class="block lg:hidden">
+      <div class="container-1 container py-[30px] lg:py-[60px] sm:py-[60px] md:py-[60px] ">
+        <div class="flex w-full lg:space-x-8 flex-wrap md:flex-nowrap space-y-28 md:space-y-0 px-3 lg:px-0">
+                <div class="swiper-res3 overflow-hidden">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                          <div class="testimonial border border-[#D0D0A7]  p-4 pb-0 relative hover:bg-[#E7F2ED] flex justify-center mb-16 md:mb-20">
+                            <p class="color-12 text-[20px] italic leading-10 pb-[90px] text-center">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor interdum ipsum, non finibus libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                            <div class="absolute  review-img bottom-[-25%] ">
+                              <img class="p-[10px] border border-[#D0D0A7] rounded-full mx-auto bg-white" src="assets/images/testimonial1.png" alt="">
+                              <p class="color-12">CLIENT NAME HERE</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testimonial border border-[#D0D0A7]  p-4 pb-0 relative hover:bg-[#E7F2ED] flex justify-center mb-16 md:mb-20">
+                        <p class="color-12 text-[20px] italic leading-10 pb-[90px] text-center">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor interdum ipsum, non finibus libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                        <div class="absolute  review-img bottom-[-25%] ">
+                          <img class="p-[10px] border border-[#D0D0A7] rounded-full mx-auto bg-white" src="assets/images/testimonial2.png" alt="">
+                          <p class="color-12">CLIENT NAME HERE</p>
+                        </div>
+                      </div>
+                  </div>
+                <div class="swiper-slide">
+                  <div class="testimonial border border-[#D0D0A7]  p-4 pb-0 relative hover:bg-[#E7F2ED] flex justify-center mb-16 md:mb-20">
+                    <p class="color-12 text-[20px] italic leading-10 pb-[90px] text-center">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor interdum ipsum, non finibus libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                    <div class="absolute  review-img bottom-[-25%] ">
+                      <img class="p-[10px] border border-[#D0D0A7] rounded-full mx-auto bg-white" src="assets/images/testimonial3.png" alt="">
+                      <p class="color-12">CLIENT NAME HERE</p>
+                      </div>
+                    </div>
+                </div>  
+                    
+                  </div>
+                 
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev-t after:hidden left-0 absolute z-10  " ><img src="assets/images/leftarrow.png" alt="" class="  "></div>
+                      <div class="swiper-button-next-t after:hidden right-0 absolute z-10"><img src="assets/images/rightarrow.png" alt="" class=""></div>
+                   
+                  
+                </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section class="bg-color-5 mt-16">
+      <div class="container-1 container py-[40px] lg:py-[60px] sm:py-[60px] md:py-[60px] relative ">
+              <!-- Slider main container -->
+                      <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide"> 
+                                  <img src="assets/images/slider1.png" alt="">
+                          </div> 
+                          <div class="swiper-slide"> 
+                            <img src="assets/images/slider2.png" alt="">
+                           </div> 
+                           <div class="swiper-slide"> 
+                            <img src="assets/images/slider3.png" alt="">
+                          </div> 
+                          <div class="swiper-slide"> 
+                            <img src="assets/images/slider4.png" alt="">
+                          </div> 
+                          <div class="swiper-slide"> 
+                            <img src="assets/images/slider5.png" alt="">
+                          </div>    
+                        </div>
+                  
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev hidden md:absolute after:hidden lg:left-[-50px] "><img src="assets/images/leftarrow.png" alt="" class="hidden md:block"></div>
+                        <div class="swiper-button-next  hidden md:absolute after:hidden lg:right[-50px] "><img src="assets/images/rightarrow.png" alt="" class="hidden md:block"></div>
+ 
+                      </div>
+      </div>
+    </section>
+    <section class="py-[30px] lg:py-[60px] sm:py-[60px] md:py-[60px]">
+          <div class="container-1 container min-h-[350px] ">
+           
+              <div class="px-3 lg:px-0 ">
+                <!-- Tabs -->
+                <ul id="tabs" class="flex flex-wrap sm:space-x-14 lg:space-x-28 pb-[30px] ">
+                  <li class="mr-2 border-b-[5px] border-[#0B8497] pb-4 text-xl sm:text-[28px] lg:text-5xl color-12 text-center me-7 lg:me-0"><a id="default-tab" href="#first">Lifestyle</a></li>
+                  <li class="mr-2 border-b-[5px] border-[#808013] pb-4 text-xl sm:text-[28px] lg:text-5xl color-12 text-center me-7 lg:me-0"><a href="#second">Travel</a></li>                 
+                  <li class="mr-2 border-b-[5px]  border-[#F8A488] pb-4 text-xl sm:text-[28px] lg:text-5xl color-12 text-center me-7 lg:me-0 "><a href="#third">Photos</a></li>
+                </ul>
+              
+                <!-- Tab Contents -->
+                <div id="tab-contents">
+                  <div id="first" class="color-9 lg:first-letter:text-6xl first-letter:text-[26px] lg:p-[30px] p-4 border  border-[#0B8497] text-sm sm:text-lg lg:text-xl lg:leading-10 leading-6">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,<span class="font-bold"> Pulvinar dapibus leo.</span>
+                  </div>
+                  <div id="second" class="hidden color-9 lg:first-letter:text-6xl first-letter:text-[26px] lg:p-[30px] p-4 border  border-[#808013] sm:text-lg text-sm lg:text-xl lg:leading-10 leading-6">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, <span class="font-bold"> Pulvinar dapibus leo.</span>
+                  </div>
+                  <div id="third" class="hidden color-9 lg:first-letter:text-6xl first-letter:text-[26px] lg:p-[30px] p-4 border  border-[#F8A488] sm:text-lg text-sm lg:text-xl lg:leading-10 leading-6">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. ULorem ipsum dolor sit amet, consectetur adipiscing elitt elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitUt elit tellus, luctus nec ullamcorper mattis, <span class="font-bold"> Pulvinar dapibus leo.</span>
+                  </div> 
+                </div>
+              </div>
+          </div>
+    </section>
+    <section class="bg-color-5">
+      <div class="container-1 container py-[30px] lg:py-[60px] sm:py-[60px] md:py-[60px] ">
+          <h3 class="text-center">Lets Collaborate Together</h3>
+          <div class="w-full flex flex-wrap sm:flex-nowrap md:flex-nowrap pt-[30px] lg:pt-[60px] lg:space-x-8 space-x-4">
+              <div class=" sm:w-2/4 md:w-2/4  lg:w-1/4 pl-4 sm:block md:block">
+                <p class="color-9 lg:text-xl lg:leading-10 sm:text-lg">What is Lorem Ipsum?<br>  
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+              </div>
+              <div class=" sm:w-2/4 md:w-2/4 lg:w-1/4 hidden sm:block md:block">
+                <p class="color-9 lg:text-xl lg:leading-10 sm:text-lg">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>
+                  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing </p>
+              </div>
+              <div class=" lg:w-1/4 hidden lg:block">
+                <p class="color-9 text-xl leading-10">software like Aldus PageMaker including versions of Lorem Ipsum.
+                  Why do we use it?<br>
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of</p>
+              </div>
+              <div class=" lg:w-1/4 hidden lg:block">
+                <p class="color-9 text-xl leading-10"> letters, as opposed to using 'Content here, content here', making it look like readable English.<br>
+                  Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. </p>
+              </div>
+              <a href="" class="mt-4 border border-[#D0D0A7] text-sm px-5 py-[10px]   font-medium hover:bg-[#D0D0A7] hover:text-white tracking-[2.1px] inline-block sm:hidden md:hidden">Read more</a>
+               
+
+          </div>
+      </div>
+    </section>
+    
+    <section>
+        <div class="container-1 container py-[30px] lg:py-[60px] sm:py-[60px] md:py-[60px] ">
+          <h3 class="text-center pb-[30px]">Recent Posts</h3>
+            <div class="w-full lg:flex sm:flex flex-wrap justify-between items-center px-3 lg:px-0 hidden   ">
+                <div class="lg:w-[32%] sm:w-[45%]  pb-8">
+                        <div class="blog border border-[#D0D0A7] ">
+                            <img class="w-full" src="assets/images/post.png" alt="">
+                            <div class="blog-text flex flex-col justify-center items-center color-12 p-[30px] hover:bg-[#E7F2ED]">
+                                <p class="text-[12px] tracking-wide">PHOTO</p>
+                                <p class="text-2xl font-normal">Little Known Ways To Rid YourSelf</p>
+                                <p class="text-sm pb-4">June 20,2021</p>
+                                <span class="border-b bottom-4 w-full border-b-[#D0D0A7] sm:hidden lg:block"></span>
+                                <p class="text-base leading-6 py-4 sm:hidden lg:block">Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks to the most high. In life there will be road blocks but we will over come...</p>
+                                <a href="" class="border border-[#D0D0A7] text-sm px-5 py-[10px]   font-medium hover:bg-[#D0D0A7] hover:text-white tracking-[2.1px]">Read more</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="lg:w-[32%] sm:w-[45%] pb-8">
+                  <div class="blog border border-[#D0D0A7] hover:bg-[#E7F2ED]">
+                      
+                      <div class="blog-text flex flex-col justify-center items-center color-12 p-[30px] ">
+                          <p class="text-[12px] tracking-wide">PHOTO</p>
+                          <p class="text-2xl font-normal">Little Known Ways To Rid YourSelf</p>
+                          <p class="text-sm pb-4">June 20,2021</p>
+                          <span class="border-b bottom-4 w-full border-b-[#D0D0A7] sm:hidden lg:block"></span>
+                          <p class="text-base leading-6 py-4 sm:hidden lg:block">Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks to the most high. In life there will be road blocks but we will over come...</p>
+                          <a href="" class="border border-[#D0D0A7] text-sm px-5 py-[10px]   font-medium hover:bg-[#D0D0A7] hover:text-white tracking-[2.1px]">Read more</a>
+                      </div>
+                      <img class="w-full" src="assets/images/post.png" alt="">
+                  </div>
+                </div>
+                <div class="lg:w-[32%]   pb-8 sm:hidden lg:block">
+                  <div class="blog border border-[#D0D0A7] hover:bg-[#E7F2ED]">
+                      <img class="w-full" src="assets/images/post.png" alt="">
+                      <div class="blog-text flex flex-col justify-center items-center color-12 p-[30px] ">
+                          <p class="text-[12px] tracking-wide">PHOTO</p>
+                          <p class="text-2xl font-normal">Little Known Ways To Rid YourSelf</p>
+                          <p class="text-sm pb-4">June 20,2021</p>
+                          <span class="border-b bottom-4 w-full border-b-[#D0D0A7] "></span>
+                          <p class="text-base leading-6 py-4">Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks to the most high. In life there will be road blocks but we will over come...</p>
+                          <a href="" class="border border-[#D0D0A7] text-sm px-5 py-[10px]   font-medium hover:bg-[#D0D0A7] hover:text-white tracking-[2.1px]">Read more</a>
+                      </div>
+                  </div>
+                </div>   
+                <div class="lg:w-[32%]   pb-8 sm:hidden lg:block">
+                  <div class="blog border border-[#D0D0A7] hover:bg-[#E7F2ED]">
+                      
+                      <div class="blog-text flex flex-col justify-center items-center color-12 p-[30px] ">
+                          <p class="text-[12px] tracking-wide">PHOTO</p>
+                          <p class="text-2xl font-normal">Little Known Ways To Rid YourSelf</p>
+                          <p class="text-sm pb-4">June 20,2021</p>
+                      </div>
+                      <img class="w-full" src="assets/images/post.png" alt="">
+                      <div class="blog-text flex flex-col justify-center items-center color-12 p-[30px]">
+                          
+                          <p class="text-base leading-6 py-4">Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks to the most high. In life there will be road blocks but we will over come...</p>
+                          <a href="" class="border border-[#D0D0A7] text-sm px-5 py-[10px]   font-medium hover:bg-[#D0D0A7] hover:text-white tracking-[2.1px]">Read more</a>
+                      </div>
+                  </div>
+                </div>             
+                <div class="lg:w-[32%]   lg:pb-8 sm:hidden lg:block">
+                  <div class="blog border border-[#D0D0A7] hover:bg-[#E7F2ED]">
+                      
+                      <div class="blog-text flex flex-col justify-center items-center color-12 p-[30px] ">
+                          <p class="text-[12px] tracking-wide">PHOTO</p>
+                          <p class="text-2xl font-normal">Little Known Ways To Rid YourSelf</p>
+                          <p class="text-sm pb-4">June 20,2021</p>
+                      </div>
+                      <img class="w-full" src="assets/images/post.png" alt="">
+                      <div class="blog-text flex flex-col justify-center items-center color-12 p-[30px]">
+                          
+                          <p class="text-base leading-6 py-4">Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks to the most high. In life there will be road blocks but we will over come...</p>
+                          <a href="" class="border border-[#D0D0A7] text-sm px-5 py-[10px]   font-medium hover:bg-[#D0D0A7] hover:text-white tracking-[2.1px]">Read more</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="lg:w-[32%]   lg:pb-8 sm:hidden lg:block">
+                  <div class="blog border border-[#D0D0A7] hover:bg-[#E7F2ED]">
+                      
+                      <div class="blog-text flex flex-col justify-center items-center color-12 p-[30px] ">
+                          <p class="text-[12px] tracking-wide">PHOTO</p>
+                          <p class="text-2xl font-normal">Little Known Ways To Rid YourSelf</p>
+                          <p class="text-sm pb-4">June 20,2021</p>
+                      </div>
+                      <img class="w-full" src="assets/images/post.png" alt="">
+                      <div class="blog-text flex flex-col justify-center items-center color-12 p-[30px]">
+                          
+                          <p class="text-base leading-6 py-4">Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks to the most high. In life there will be road blocks but we will over come...</p>
+                          <a href="" class="border border-[#D0D0A7] text-sm px-5 py-[10px]   font-medium hover:bg-[#D0D0A7] hover:text-white tracking-[2.1px]">Read more</a>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="lg:w-[32%] sm:w-[45%]  pb-8 sm:block lg:hidden">
+                    <div class="blog border border-[#D0D0A7] ">
+                        <img class="w-full" src="assets/images/post.png" alt="">
+                        <div class="blog-text flex flex-col justify-center items-center color-12 p-[30px] hover:bg-[#E7F2ED]">
+                            <p class="text-[12px] tracking-wide">PHOTO</p>
+                            <p class="text-2xl font-normal">Little Known Ways To Rid YourSelf</p>
+                            <p class="text-sm pb-4">June 20,2021</p>
+                            <span class="border-b bottom-4 w-full border-b-[#D0D0A7] sm:hidden lg:block"></span>
+                            <p class="text-base leading-6 py-4 sm:hidden lg:block">Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks to the most high. In life there will be road blocks but we will over come...</p>
+                            <a href="" class="border border-[#D0D0A7] text-sm px-5 py-[10px]   font-medium hover:bg-[#D0D0A7] hover:text-white tracking-[2.1px]">Read more</a>
+                        </div>
+                    </div>
+                  </div> 
+                  <div class="lg:w-[32%] sm:w-[45%] pb-8 sm:block lg:hidden">
+                    <div class="blog border border-[#D0D0A7] hover:bg-[#E7F2ED]">
+                        
+                        <div class="blog-text flex flex-col justify-center items-center color-12 p-[30px] ">
+                            <p class="text-[12px] tracking-wide">PHOTO</p>
+                            <p class="text-2xl font-normal">Little Known Ways To Rid YourSelf</p>
+                            <p class="text-sm pb-4">June 20,2021</p>
+                            <span class="border-b bottom-4 w-full border-b-[#D0D0A7] sm:hidden lg:block"></span>
+                            <p class="text-base leading-6 py-4 sm:hidden lg:block">Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks to the most high. In life there will be road blocks but we will over come...</p>
+                            <a href="" class="border border-[#D0D0A7] text-sm px-5 py-[10px]   font-medium hover:bg-[#D0D0A7] hover:text-white tracking-[2.1px]">Read more</a>
+                        </div>
+                        <img class="w-full" src="assets/images/post.png" alt="">
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="w-full lg:flex flex-wrap justify-center hidden">
+              <a href="" class="border border-[#D0D0A7] text-[22px] px-5 py-[10px] italic font-medium hover:bg-[#D0D0A7] hover:text-white tracking-normal lg:tracking-[3.3px]">VIEW MORE POSTS</a>
+            </div>
+            <div class="w-full flex flex-wrap justify-between items-center px-3 lg:px-0 sm:hidden lg:hidden space-y-4">
+              <div class="blog border border-[#D0D0A7] w-full">
+                 
+                <div class="blog-text flex flex-col justify-start color-12 p-[15px] hover:bg-[#E7F2ED]">
+                    <p class="text-[12px] tracking-wide">PHOTO</p>
+                    <p class="text-2xl font-normal">Little Known Ways To Rid YourSelf</p>
+                    <p class="text-sm ">June 20,2021</p>
+                </div>
+              </div>
+              <div class="blog border border-[#D0D0A7] w-full">
+                 
+                <div class="blog-text flex flex-col justify-start color-12 p-[15px] hover:bg-[#E7F2ED]">
+                    <p class="text-[12px] tracking-wide">PHOTO</p>
+                    <p class="text-2xl font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="text-sm ">June 20,2021</p>
+                </div>
+              </div>
+              <div class="blog border border-[#D0D0A7] w-full">
+                 
+                <div class="blog-text flex flex-col justify-start color-12 p-[15px] hover:bg-[#E7F2ED]">
+                    <p class="text-[12px] tracking-wide">PHOTO</p>
+                    <p class="text-2xl font-normal">Little Known Ways To Rid YourSelf</p>
+                    <p class="text-sm ">June 20,2021</p>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="bg-color-5 py-[30px] lg:py-[60px] sm:py-[60px] md:py-[60px]">
+      <div class="container-1 container">
+          <h3 class="text-center pb-[30px]">Contact Us</h3>
+    
+          <form action="">
+            <div class="w-full flex flex-wrap justify-between  ">   <!--row-->
+              <div class="w-full sm:w-2/4 lg:w-6/12 space-y-5 px-4">
+                <div >
+                  <input type="text" name="" id="" class="border border-[#04282D4D] bg-transparent p-5 w-full focus-visible:outline-none  placeholder:text-[#04282D] text-xl leading-6" placeholder="First Name">
+                </div>
+                <div >
+                  <input type="text" name="" id="" class="border border-[#04282D4D] bg-transparent p-5 w-full focus-visible:outline-none  placeholder:text-[#04282D] text-xl leading-6" placeholder="Last Name">
+                </div>
+                <div >
+                  <input type="email" name="" id="" class="border border-[#04282D4D] bg-transparent p-5 w-full focus-visible:outline-none  placeholder:text-[#04282D] text-xl leading-6" placeholder="Email">
+                </div>
+                <div>
+                  <label for="comments" class="pb-3 block text-xl">Comments</label>
+                  <textarea name="comments" id="" cols="30" rows="3" class="border border-[#04282D4D] bg-transparent p-5 w-full focus-visible:outline-none  resize-none placeholder:text-[#04282D] text-xl leading-6" ></textarea>
+                </div>
+                
+              </div>
+              <div class="w-full sm:w-2/4 lg:w-6/12 space-y-1 px-4">
+                <p class="text-xl leading-6">Upload File</p>
+                <div class="border-dashed border-2 border-[#04282D4D]  flex flex-col justify-center items-center content-center lg:py-28 sm:py-28 space-y-3 py-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 30 26" fill="none">
+                    <path d="M22.5787 21.3995H18.3762C18.0764 21.3995 17.7888 21.2675 17.5768 21.0326C17.3648 20.7977 17.2457 20.4791 17.2457 20.147C17.2457 19.8148 17.3648 19.4962 17.5768 19.2613C17.7888 19.0264 18.0764 18.8945 18.3762 18.8945H22.5787C23.9695 18.8761 25.2976 18.251 26.2752 17.1549C27.2528 16.0588 27.8011 14.58 27.8011 13.039C27.8011 11.498 27.2528 10.0192 26.2752 8.92306C25.2976 7.82695 23.9695 7.20194 22.5787 7.18354C22.4362 7.18354 22.2848 7.19105 22.1159 7.20775C21.9023 7.22793 21.6879 7.1804 21.4978 7.0707C21.3076 6.961 21.1495 6.79365 21.042 6.58818C20.2796 5.13134 19.1309 3.96996 17.7518 3.26196C16.3727 2.55395 14.8303 2.33368 13.3343 2.63109C11.8382 2.92851 10.4612 3.72917 9.39034 4.92422C8.31949 6.11926 7.60683 7.6507 7.34925 9.31029C7.30319 9.60978 7.16046 9.88051 6.94763 10.0721C6.7348 10.2636 6.46638 10.3629 6.19236 10.3515H6.11247C5.60603 10.3515 5.10454 10.4621 4.63664 10.6768C4.16875 10.8915 3.7436 11.2062 3.38549 11.603C3.02738 11.9997 2.74331 12.4708 2.5495 12.9892C2.35569 13.5075 2.25594 14.0632 2.25594 14.6243C2.25594 15.1854 2.35569 15.741 2.5495 16.2593C2.74331 16.7777 3.02738 17.2488 3.38549 17.6455C3.7436 18.0423 4.16875 18.357 4.63664 18.5717C5.10454 18.7864 5.60603 18.897 6.11247 18.897H11.7432C12.043 18.897 12.3305 19.0289 12.5425 19.2638C12.7546 19.4987 12.8737 19.8173 12.8737 20.1495C12.8737 20.4817 12.7546 20.8002 12.5425 21.0351C12.3305 21.27 12.043 21.402 11.7432 21.402H6.11247C4.55985 21.4003 3.06585 20.7448 1.93327 19.5681C0.800681 18.3915 0.114227 16.7818 0.013021 15.0653C-0.0881847 13.3487 0.403429 11.6538 1.38823 10.3239C2.37303 8.99404 3.77736 8.12872 5.3166 7.90331C5.79975 5.92775 6.7841 4.14712 8.15294 2.77255C9.52177 1.39797 11.2177 0.487109 13.0396 0.147952C14.8615 -0.191204 16.7329 0.0555739 18.4321 0.859026C20.1312 1.66248 21.5868 2.9889 22.6262 4.68103C24.6013 4.73112 26.48 5.63736 27.8587 7.20514C29.2374 8.77291 30.0062 10.8772 30 13.066C29.9937 15.2549 29.213 17.3538 27.8254 18.9119C26.4378 20.47 24.5541 21.3632 22.5787 21.3995Z" fill="#04282D"/>
+                    <path d="M15.0601 9.73746C15.3598 9.73776 15.6472 9.86991 15.859 10.1049L19.4902 14.1271C19.7023 14.3619 19.8215 14.6805 19.8215 15.0127C19.8216 15.3449 19.7026 15.6636 19.4906 15.8985C19.2786 16.1335 18.9911 16.2655 18.6912 16.2656C18.3913 16.2657 18.1037 16.1338 17.8917 15.899L15.0601 12.761L12.2278 15.899C12.0157 16.1338 11.7281 16.2657 11.4283 16.2656C11.1284 16.2655 10.8409 16.1335 10.6289 15.8985C10.4169 15.6636 10.2979 15.3449 10.2979 15.0127C10.298 14.6805 10.4172 14.3619 10.6293 14.1271L14.2605 10.1049C14.3654 9.98842 14.4901 9.89604 14.6273 9.833C14.7645 9.76996 14.9116 9.7375 15.0601 9.73746Z" fill="#04282D"/>
+                    <path d="M15.0602 9.73748C15.36 9.73748 15.6475 9.86944 15.8596 10.1043C16.0716 10.3392 16.1907 10.6578 16.1907 10.99L16.1907 24.7475C16.1907 25.0797 16.0716 25.3983 15.8596 25.6332C15.6475 25.868 15.36 26 15.0602 26C14.7603 26 14.4728 25.868 14.2608 25.6332C14.0488 25.3983 13.9297 25.0797 13.9297 24.7475L13.9297 10.99C13.9297 10.6578 14.0488 10.3392 14.2608 10.1043C14.4728 9.86944 14.7603 9.73748 15.0602 9.73748Z" fill="#04282D"/>
+                    </svg>
+                  <p class="text-xl leading-6"> Drop Your Files Here</p>
+                  <p  class="text-xl leading-6">or</p>
+                    <label for="fileupload" class="border border-[#04282D4D] py-2 px-5 hover:cursor-pointer text-xl leading-6">Browse File</label>
+                  <input type="file" name="fileupload" id="fileupload" class="hidden" value="Browse File">
+                  
+                </div>
+
+              </div>
+              
+             
+
+            </div>
+            <div class="w-full flex flex-wrap justify-between px-4 py-2">
+              <button href="" class="border border-[#04282D4D] text-sm px-5 py-[10px]  font-medium hover:cursor-pointer tracking-[2.1px]">SUBMIT</button>
+            </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="py-[30px] lg:py-[60px] sm:py-[60px] md:py-[60px]" >
+      <div class="container-1 container">
+        <h3 class="text-center pb-[30px]">FAQ</h3>
+        <div class="w-full lg:w-2/3 mx-auto">
+          <div class="m-2 space-y-2">
+            <div
+              class="group flex flex-col    p-5  border border-[#0B8497]"
+              tabindex="1"
+            >
+              <div class="flex cursor-pointer items-center justify-between  ">
+                <span class="lg:text-3xl sm:text-xl text-base lg:leading-10 leading-[22px]"> Lorem ipsum dolor sit amet </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M10 -0.00195312V19.998" stroke="#04282D" stroke-width="2"/>
+                  <path d="M20 9.99805L-5.96046e-07 9.99805" stroke="#04282D" stroke-width="2"/>
+                  </svg>
+              </div>
+              <div
+                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000    group-focus:border-t group-focus:border-[#04282D4D] group-focus:mt-2 group-focus:pt-2"
+              >
+              <p class="text-xl lg:leading-[40px] text-[#00000080] sm:text-lg ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          
+            <div
+              class="group flex flex-col  p-5  border border-[#0B8497]"
+              tabindex="2"
+            >
+              <div class="flex cursor-pointer items-center justify-between">
+                <span class="lg:text-3xl sm:text-xl text-base lg:leading-10 leading-[22px]"> Lorem ipsum dolor sit amet </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M10 -0.00195312V19.998" stroke="#04282D" stroke-width="2"/>
+                  <path d="M20 9.99805L-5.96046e-07 9.99805" stroke="#04282D" stroke-width="2"/>
+                  </svg>
+              </div>
+              <div
+                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 group-focus:border-t group-focus:border-[#04282D4D] group-focus:mt-2 group-focus:pt-2"
+              >
+              <p class="text-xl lg:leading-[40px] text-[#00000080]  sm:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> 
+                consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          
+            <div
+              class="group flex flex-col   p-5  border border-[#0B8497]"
+              tabindex="3"
+            >
+              <div class="flex cursor-pointer items-center justify-between">
+                <span class="lg:text-3xl sm:text-xl text-base lg:leading-10 leading-[22px]"> Lorem ipsum dolor sit amet </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M10 -0.00195312V19.998" stroke="#04282D" stroke-width="2"/>
+                  <path d="M20 9.99805L-5.96046e-07 9.99805" stroke="#04282D" stroke-width="2"/>
+                  </svg>
+              </div>
+              <div
+                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 group-focus:border-t group-focus:border-[#04282D4D] group-focus:mt-2 group-focus:pt-2"
+              >
+              <p class="text-xl lg: leading-[40px] text-[#00000080]  sm:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> 
+                consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>       
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section>
+      <div class="container-1 container lg:py-10 py-5">
+        <div class="w-full flex   justify-between   flex-wrap lg:flex-nowrap lg:items-center  ">
+          <div class="w-full lg:w-1/2 order-2 lg:order-1">
+            <ul class="list-unstyled  flex flex-row  justify-center py-4 lg:py-0">
+              <li class=" first-letter: pr-4 border-r border-[#04282D] lg:text-lg text-xs hidden lg:block sm:block">&copy; 2022 Haus Gitschberg</li>
+              <li class="  px-2 border-r border-[#04282D] lg:text-lg text-xs order-1"><a href="">Terms & Conditions</a></li>
+              <li class="  pl-2 lg:text-lg text-xs order-2"><a href="">Privacy Policy</a></li>
+              
+            </ul>
+          </div>
+          <div class="w-full lg:w-1/2 order-1 lg:order-2">
+              <ul class="list-unstyled flex lg:justify-end flex-row justify-center ">
+                <li class="pr-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                </li>
+                <li class="pr-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                </li>
+                <li class="pr-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </li>
+                <li class="pr-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"/></svg>
+                </li>
+                <li class=" ">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                </li>
+                
+
+              </ul>
+          </div>
+          <div class="order-3 lg:hidden w-full sm:hidden">
+            <p class="text-center  ">&copy; 2022 Haus Gitschberg</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.5/swiper-bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+:root{
+
+    --font-size-1:70px;
+    --font-size-2:60px;
+    --font-size-3:48px;
+    --font-size-4:40px;
+    --font-size-5:30px;
+    --font-size-6:20px;
+    --font-size-7:26px;
+    --font-size-8:22px;
+    --font-size-9:18px;
+    --font-size-10:16px;
+    
+    --color-1:#0B8497;
+    --color-2:#808013;
+    --color-3:#5B9262;
+    --color-4:#F8A488;
+    --color-5:#E7F2ED;
+    --color-6:#F2F2E6;
+    --color-7:#F4F4F2;
+    --color-8:#141C13;
+    --color-9: #777;
+    --color-10:#E0E0E0;
+    --color-11:#E7F3F5;
+    --color-12:#04282D;
+    --color-13:#D0D0A7;
+}
+
+.color-1{ color:var(--color-1); }
+.color-2{ color:var(--color-2); }
+.color-3{ color:var(--color-3); }
+.color-4{ color:var(--color-4); }
+.color-5{ color:var(--color-5); }
+.color-6{ color:var(--color-6); }
+.color-7{ color:var(--color-7); }
+.color-8{ color:var(--color-8); }
+.color-9{ color:var(--color-9); }
+.color-10{ color:var(--color-10); }
+.color-11{ color:var(--color-11); }
+.color-12{ color:var(--color-12) !important; }
+.color-13{ color:var(--color-13); }
+
+.bg-color-1{ background-color:var(--color-1); }
+.bg-color-2{ background-color:var(--color-2); }
+.bg-color-3{ background-color:var(--color-3); }
+.bg-color-4{ background-color:var(--color-4); }
+.bg-color-5{ background-color:var(--color-5); }
+.bg-color-6{ background-color:var(--color-6); }
+.bg-color-7{ background-color:var(--color-7); }
+.bg-color-8{ background-color:var(--color-8); }
+.bg-color-9{ background-color:var(--color-9); }
+.bg-color-10{ background-color:var(--color-10); }
+.bg-color-11{ background-color:var(--color-11); }
+.bg-color-12{ background-color:var(--color-12); }
+
+.font-70{     font-size: var(--font-size-1); }
+.font-60{     font-size: var(--font-size-2); }
+.font-48{     font-size: var(--font-size-3); }
+.font-40{     font-size: var(--font-size-4); }
+.font-30{     font-size: var(--font-size-5); }
+.font-60{     font-size: var(--font-size-6); }
+
+h1{    font-size: var(--font-size-1) !important; color: var(--color-12) ; }
+h2{    font-size: var(--font-size-2) !important; color: var(--color-12) ; }
+h3{    font-size: var(--font-size-3) !important; color: var(--color-12) ; }
+h4{    font-size: var(--font-size-4) !important; color: var(--color-12) ; }
+h5{    font-size: var(--font-size-5) !important; color: var(--color-12) ; }
+h6{    font-size: var(--font-size-6) !important; color: var(--color-12) ; }
+
+.ltr-spc-1_4{
+letter-spacing: 1.4px;
+}
+.ltr-spc-3{
+letter-spacing: 3px;
+}
+.py-30{
+    padding-top: 30px;padding-bottom: 30px;
+}
+body{
+    color:var(--color-12);
+}

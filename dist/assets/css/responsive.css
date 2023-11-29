@@ -1,0 +1,147 @@
+ 
+@media only screen and (max-width: 1444px) and  (min-width:1367px){
+  
+}
+@media only screen and (max-width: 1366px) and (min-width:1199px)  {
+   
+ 
+    
+}
+@media only screen and (max-width: 1199px) and (min-width:1024px)  {
+ 
+ 
+}
+/* @media only screen and (max-width: 1024px) and (min-width:992px)  {
+ 
+} */
+/* large screen , class lg */
+@media only screen and (max-width: 1023px) and (min-width:767px)  {
+   
+     h1{
+        font-size: 42px !important;
+       }
+       h2{
+        font-size: 36px !important;
+       }
+       h3{
+        font-size: 32px !important;
+       }
+       h4{
+        font-size: 20px !important;
+       }
+       h5{
+        font-size: 28px !important;
+       }
+       h6{
+        font-size: 20px !important;
+       }
+       .border-middle::before,.border-middle-2::before{
+        display: none !important;
+       }
+}
+/* medium screen ,class md */
+@media only screen and (max-width: 767px) and (min-width:576px) {
+    h1{
+        font-size: 42px !important;
+       }
+       h2{
+        font-size: 36px !important;
+       }
+       h3{
+        font-size:32px !important;
+       }
+       h4{
+        font-size: 28px !important;
+       }
+       h5{
+        font-size: 24px !important;
+       }
+       h6{
+        font-size: 20px !important;
+       }
+       .border-middle::before,.border-middle-2::before{
+        display: none !important;
+       }
+}
+/* small screen, sm class */
+@media only screen and (max-width: 767px) and (min-width:640px) {
+    .container-1{
+        max-width: 677px !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    h1{
+        font-size: 42px !important;
+       }
+       h2{
+        font-size: 36px !important;
+       }
+       h3{
+        font-size: 32px !important;
+       }
+       h4{
+        font-size: 20px !important;
+       }
+       h5{
+        font-size: 28px !important;
+       }
+       h6{
+        font-size: 20px !important;
+       }
+       .border-middle::before,.border-middle-2::before{
+        display: none !important;
+       }
+} 
+@media only screen and (max-width: 639px) and (min-width:420px) {
+    h1{
+        font-size: 30px !important;
+       }
+       h2{
+        font-size: 26px !important;
+       }
+       h3{
+        font-size: 22px !important;
+       }
+       h4{
+        font-size: 20px !important;
+       }
+       h5{
+        font-size: 18px !important;
+       }
+       h6{
+        font-size: 16px !important;
+       }
+       .border-middle::before,.border-middle-2::before{
+        display: none !important;
+       }
+}
+/* mobile only */
+ 
+@media only screen and (max-width: 419px)  { 
+   
+   h1{
+    font-size: 30px !important;
+   }
+   h2{
+    font-size: 26px !important;
+   }
+   h3{
+    font-size: 22px !important;
+   }
+   h4{
+    font-size: 20px !important;
+   }
+   h5{
+    font-size: 18px !important;
+   }
+   h6{
+    font-size: 16px !important;
+   }
+   p{
+    font-size: 16px !important;
+    line-height: 26px !important;
+   }
+   .border-middle::before,.border-middle-2::before{
+    display: none !important;
+   }
+}

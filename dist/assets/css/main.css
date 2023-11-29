@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Playfair Display;
+    src: url('../font/PlayfairDisplay-Regular.ttf');
+}
+@font-face {
+    font-family: Playfair Display;
+    src: url('../font/PlayfairDisplay-Italic.ttf');
+    font-style: italic;
+}
+
+* {
+    box-sizing: border-box;
+} 
+
+body{
+    margin: 0;
+    font-family: Playfair Display;
+    
+}
+.container-1{
+    width: 1440px !important;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+        padding-right: 15px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+    z-index: 99;
+  }
+/* .banner-center{
+    transform: translate(-50%);
+    z-index: 1;
+} */
+.has-submenu:hover .submenu{
+    display: block;
+    left: 100%;
+    top: -25px;
+} 
+.bar-after::after{
+    display: block;
+    content: '';
+   width: 100px;
+   height: 5px;
+   background: #0B8497;
+   margin-top: 10px; 
+   
+}
+.border-middle::before{
+    content: '';
+    border-left: 1px solid #D0D0A7;
+    height: 100%;
+    position:absolute;
+    left: 35%;
+}
+.border-middle-2::before{
+    content: '';
+    border-left: 1px solid #D0D0A7;
+    height: 100%;
+    position:absolute;
+    left: 45%;
+}
+
+.swiper{
+    position: unset !important;
+}
+/* .swiper-button-prev::after,.swiper-button-next::after{
+   display: none;
+} */
+    /* .swiper-button-prev{
+        left: -50px !important;
+    }
+    .swiper-button-next{
+        right: -50px !important;
+    } */
